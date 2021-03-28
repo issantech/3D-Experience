@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Style CSS -->
+    <link rel="icon" href="./assets/vectary-logo.png" type="image/png" sizes="100">
+    <link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <title>VECTARY Test | Dominique N'GUESSAN</title>
+  </head>
+  <body>
+    <h2 class="intro-title"> <img src="./assets/vectary-logo.png" alt=""><span class="vectary-logo"></span> <span class="action-title">Vectary <sup>&reg;</sup>  </span>Viewer</h2>
+    <div id="container">
+    
+  
+
+        
+        <div id="container">
+          <vctr-viewer id="test" model="d6c1f27d-6a27-4c7e-bd7d-bd19d7faa56c" turntable="0" gesturehandling="superior" showinteractionprompt="0" enableapi="1">
+          </vctr-viewer>
+          <span id="button-group">
+            <button id="camera0" class="button">Switch to Default Camera</button>
+            <button id="camera1" class="button">Switch to Rocket Camera</button>
+            <button id="camera2" class="button">Switch to Back Camera</button>
+            <button id="rocket" class="button">Rocket</button>
+            <button id="base" class="button">Space Base</button>
+            <button id="hide" class="button">Hide all</button>
+
+            
+            <div id="preloader-demo">
+              <svg class="spinner-demo" width="50px" height="50px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="path-demo" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+                  </circle>
+              </svg>
+          </div>
+  
+          <span class="button-group">
+              <label for="select_mesh">Object</label>
+              <select id="select_mesh"><option value="Saucer">Saucer</option><option value="Satellite_Antenna">Satellite_Antenna</option><option value="Arm">Arm</option><option value="Holder">Holder</option><option value="Joints">Joints</option><option value="Platform">Platform</option><option value="Ring_large">Ring_large</option><option value="Building">Building</option><option value="Tower">Tower</option><option value="Stripes">Stripes</option><option value="Relay">Relay</option><option value="Antenna">Antenna</option><option value="Ball">Ball</option><option value="Ring_2">Ring_2</option><option value="Pipes">Pipes</option><option value="Lights_2">Lights_2</option><option value="Asteroid_Large_1">Asteroid_Large_1</option><option value="Rocks">Rocks</option><option value="Monocoque">Monocoque</option><option value="Light">Light</option><option value="Wings">Wings</option><option value="Glass">Glass</option><option value="Smoke">Smoke</option></select>
+  
+              <label for="select_material">Material</label>
+              <select id="select_material"><option value="Material 32">Material 32</option><option value="Material 31">Material 31</option><option value="Material 32">Material 32</option><option value="Material 31">Material 31</option><option value="Material 31">Material 31</option><option value="Material 30">Material 30</option><option value="Material 31">Material 31</option><option value="Material 32">Material 32</option><option value="Material 32">Material 32</option><option value="Material 34">Material 34</option><option value="Material 32">Material 32</option><option value="Material 34">Material 34</option><option value="Material 32">Material 32</option><option value="Material 31">Material 31</option><option value="Material 34">Material 34</option><option value="Material 33">Material 33</option><option value="Material 29">Material 29</option><option value="Material 35">Material 35</option><option value="White material">White material</option><option value="Blue material">Blue material</option><option value="Material 60">Material 60</option><option value="Material 61">Material 61</option><option value="Cone material 1">Cone material 1</option></select>
+  
+              <label for="select_color">Color</label>
+              <select id="select_color">
+                  <option value="no-change" selected="">No color change</option>
+                  <option value="#ff0000">Red</option>
+                  <option value="#00ff00">Green</option>
+                  <option value="#0000ff">Blue</option>
+              </select>
+  
+              <button id="apply_selections">Apply selections</button>
+              <button id="properties">?</button>
+          </span>
+  
+          <span class="button-group">
+              <input id="texture-input" placeholder="Add link to texture to apply">
+              <button id="texture-apply">Apply texture</button>
+          </span>
+            
+        </span>
+      </div>
+    
+    <!-- JavaScript starts here -->
+    <script type='module' src='https://www.vectary.com/viewer/v1/scripts/vctr-viewer.js'></script>
+   
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
